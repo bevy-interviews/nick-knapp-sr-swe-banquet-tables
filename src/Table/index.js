@@ -33,13 +33,16 @@ const Table = ({ name, id, size, guests }) => {
   return (
     <div ref={drop} className={styles.table}>
       {error?.id === id && <div className={styles.error}>{error.message}</div>}
-      <h1>{name}</h1>
-      <p>
-        Seats: {guests.length}/{size}
-      </p>
-      {guests.map((guest) => (
-        <Guest key={guest.id} name={guest.name} id={guest.id} />
-      ))}
+      <div className={styles.content}>      
+        <h1>{name}</h1>
+        <p>
+          Seats: {guests.length}/{size}
+        </p>
+        {guests.map((guest) => (
+          <Guest key={guest.id} name={guest.name} id={guest.id} />
+        ))}
+      </div>
+
     </div>
   );
 };
