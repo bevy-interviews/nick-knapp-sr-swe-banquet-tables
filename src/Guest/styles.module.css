@@ -1,6 +1,17 @@
 .guest {
-  /* TODO: fill in styles to match design */
+  display: flex;
+  color: #fff;
+  background: #005bbe;
+  padding: 0.9375rem;
+  margin: 0.46875rem;
+  border: 0.3125rem #003c7d solid;
+}
+.guest span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .guest.outlined {
-  /* TODO: fill in styles to match design */
+  background: inherit;
+  border: 0.0625rem #555 dashed;
+  padding: 1.1875rem;
 }

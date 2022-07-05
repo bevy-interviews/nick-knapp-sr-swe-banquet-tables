@@ -7,6 +7,8 @@ export const remove = (arr, index) => [...arr.slice(0, index), ...arr.slice(inde
 
 export const insert = (arr, index, value) => [...arr.slice(0, index), value, ...arr.slice(index)];
 
+export const prepend = (arr, value) => [value, ...arr];
+
 export const push = (arr, value) => [...arr, value];
 
 export const move = (arr, from, to) => insert(remove(arr, from), to, arr[from]);
